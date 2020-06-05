@@ -1,0 +1,32 @@
+{
+    "name": "twinkle/laravel-push-stream",
+    "type": "library",
+    "description": "基于 nginx-push-stream-module 实现 laravel 广播.",
+    "keywords": [
+        "laravel",
+        "Broadcaster",
+        "push"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "twinkle\\pusher\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
